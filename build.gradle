@@ -1,0 +1,19 @@
+// Configure plugins
+plugins {
+	// java plugin
+	id 'java'
+}
+
+// Configure repositories
+repositories {
+	// maven central for dependencies
+	mavenCentral()
+	// jitpack for launchpad library
+    maven { url = "https://jitpack.io" }
+}
+
+// Configure dependencies
+dependencies {
+	// add launchpad library
+	implementation group: "com.github.harry1453.klaunchpad", name: "klaunchpad", version: "-SNAPSHOT"
+}
